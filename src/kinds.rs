@@ -18,6 +18,7 @@ pub enum SyntaxKind {
     TOKEN_REC,
     TOKEN_THEN,
     TOKEN_WITH,
+    TOKEN_CUR_POS,
 
     // Symbols
     TOKEN_L_BRACE,
@@ -101,6 +102,7 @@ pub enum SyntaxKind {
     NODE_PATH,
     // Attrpath existence check: foo ? bar.${baz}."bux"
     NODE_HAS_ATTR,
+    NODE_CUR_POS,
 
     #[doc(hidden)]
     __LAST,
@@ -126,7 +128,7 @@ impl SyntaxKind {
     pub fn is_fn_arg(self) -> bool {
         match self {
             TOKEN_REC | TOKEN_L_BRACE | TOKEN_L_BRACK | TOKEN_L_PAREN | TOKEN_STRING_START
-            | TOKEN_IDENT => true,
+            | TOKEN_IDENT | TOKEN_CUR_POS => true,
             _ => self.is_literal(),
         }
     }

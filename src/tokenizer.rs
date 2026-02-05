@@ -424,6 +424,8 @@ impl Tokenizer<'_> {
                         "let" => TOKEN_LET,
                         // "or" is a contextual keyword and will be handled in the parser.
                         "or" => TOKEN_OR,
+                        // similarly to "or", will be handled in the parser.
+                        "__curPos" => TOKEN_CUR_POS,
                         "rec" => TOKEN_REC,
                         "then" => TOKEN_THEN,
                         "with" => TOKEN_WITH,

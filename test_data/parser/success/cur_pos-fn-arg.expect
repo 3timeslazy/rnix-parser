@@ -1,0 +1,46 @@
+NODE_ROOT@0..58
+  NODE_LET_IN@0..58
+    TOKEN_LET@0..3 "let"
+    TOKEN_WHITESPACE@3..4 " "
+    NODE_ATTRPATH_VALUE@4..53
+      NODE_ATTRPATH@4..5
+        NODE_IDENT@4..5
+          TOKEN_IDENT@4..5 "s"
+      TOKEN_WHITESPACE@5..6 " "
+      TOKEN_ASSIGN@6..7 "="
+      TOKEN_WHITESPACE@7..8 " "
+      NODE_STRING@8..52
+        TOKEN_STRING_START@8..9 "\""
+        NODE_INTERPOL@9..25
+          TOKEN_INTERPOL_START@9..11 "${"
+          NODE_SELECT@11..24
+            NODE_CUR_POS@11..19
+              TOKEN_CUR_POS@11..19 "__curPos"
+            TOKEN_DOT@19..20 "."
+            NODE_ATTRPATH@20..24
+              NODE_IDENT@20..24
+                TOKEN_IDENT@20..24 "file"
+          TOKEN_INTERPOL_END@24..25 "}"
+        TOKEN_STRING_CONTENT@25..26 ":"
+        NODE_INTERPOL@26..51
+          TOKEN_INTERPOL_START@26..28 "${"
+          NODE_APPLY@28..50
+            NODE_IDENT@28..36
+              TOKEN_IDENT@28..36 "toString"
+            TOKEN_WHITESPACE@36..37 " "
+            NODE_SELECT@37..50
+              NODE_CUR_POS@37..45
+                TOKEN_CUR_POS@37..45 "__curPos"
+              TOKEN_DOT@45..46 "."
+              NODE_ATTRPATH@46..50
+                NODE_IDENT@46..50
+                  TOKEN_IDENT@46..50 "line"
+          TOKEN_INTERPOL_END@50..51 "}"
+        TOKEN_STRING_END@51..52 "\""
+      TOKEN_SEMICOLON@52..53 ";"
+    TOKEN_WHITESPACE@53..54 " "
+    TOKEN_IN@54..56 "in"
+    TOKEN_WHITESPACE@56..57 " "
+    NODE_IDENT@57..58
+      TOKEN_IDENT@57..58 "s"
+
